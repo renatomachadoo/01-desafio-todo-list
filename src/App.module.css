@@ -1,0 +1,71 @@
+.tasks{
+    max-width: 46rem;
+
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.tasks > header {
+    margin-top: calc(0px - 1rem - 1.875rem);
+
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr auto;
+}
+
+.tasksList{
+    margin-top: 4rem;
+}
+
+.tasksList > header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tasksCount{
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.finishedTasksCount{
+    color: var(--purple);
+    font-weight: 700;
+}
+
+.count{
+    padding: 0.125rem 0.5rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    color: var(--gray-200);
+    background: var(--gray-400);
+    margin-left: 0.5rem;
+}
+
+.tasksList > main {
+    margin-top: 1.5rem;
+}
+
+.noTasks{
+    border-top: 1px solid var(--gray-400);
+    border-radius: 8px;
+
+    padding: 4rem 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    color: var(--gray-300);
+}
+
+.noTasks p{
+    margin-top: 1rem;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.noTasks span{
+    line-height: 1.4;
+}

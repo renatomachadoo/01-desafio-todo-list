@@ -1,0 +1,32 @@
+.checkboxWrapper input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkboxWrapper .checkMark{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 2px solid var(--blue);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkboxWrapper .checkMark svg{
+    display: none;
+}
+
+.checkboxWrapper input:checked + .checkMark{
+    background: var(--purple-dark);
+    border: 2px solid var(--purple-dark);
+}
+
+.checkboxWrapper input:checked + .checkMark svg{
+    display: block;
+}
